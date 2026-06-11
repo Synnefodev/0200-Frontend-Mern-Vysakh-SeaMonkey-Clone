@@ -3,7 +3,7 @@
 ## Project Overview
 
 The objective of this project is to recreate the SeaMonkey Expedition landing page using modern frontend development practices. Students will work collaboratively through GitHub Issues, implementing each section of the website while following responsive design principles and clean coding standards.
-url('https://aswathi-48.github.io/SeaMonkey/')
+https://aswathi-48.github.io/SeaMonkey/
 ---
 
 ## Learning Objectives
