@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+}
+.main{
+    height:120px;
+    display: flex;
+    background:url('bgnav.jpg') no-repeat  ;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    flex-wrap: wrap;
+    /* background-attachment:scroll;
+    background-clip: scroll;
+    overflow: scroll;
+    overflow-x: hidden; */
+}
+.logo{
+    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    
+    flex-direction: column;
+
+}
+.logo img{
+    height: 80px;
+    width: 80px;
+    /* object-fit: contain; */
+    /* margin-left: 50px;
+    margin-bottom: 0px;
+    margin-top: 50px; */
+    margin: 0;
+  
+}
+.logo-name{
+    color: bisque;
+    /* margin-top: 0px; */
+    /* margin-left: 40px; */
+    font-size: 20px;
+   /* margin-bottom: 50px; */
+}
+.search{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+  
+}
+.search input{
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    height: 40px;
+    border-radius:20px;
+    background-color: transparent;
+    border-bottom: none;
+    text-decoration-color: gray;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+   border: none;
+   outline: none;
+     border-bottom:2px solid white; 
+
+}
+.search.input ::placeholder
+{
+    color: white;
+}
+.services{
+    position: relative;
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+}
+.services ul{
+    display: flex;
+    justify-content:space-evenly;
+   font-weight: bold;
+    font-size: 20px;
+    color: beige;
+    width: 40%;
+    list-style-type: none;
+    margin: 0;
+}
+#contactUs{
+    background-color: rgb(13, 72, 197);
+    width: 150px;
+    height: 45px;
+   margin: 0;
+    color: aliceblue;
+    font-size: 20px;
+    /* position: relative; */
+}
+ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #000;
+}
+.services .menu{
+    color: wheat;
+    font-size: 35px;
+}
+
+@media  screen and (min-width:1441px) {
+    .services .menu{
+        display: none;
+    }
+
+    
+}
+@media screen and (max-width:1441px) {
+    .logo{
+        font-size: 20px;
+       
+    }
+    .services ul{
+        display: none;
+    }
+    .services{
+        flex: 1;
+    }
+    
+    
+}
+
+@media (max-width: 426px){
+    .logo img{
+height: 45px;
+width: 45px;
+    }
+    .logo .logo-name{
+        font-size: 13px;
+
+    }
+    .services #contactUs{
+        display: none !important;
+    }
+    .services .phone{
+        color: white;
+    }
+}
+@media screen and (min-width:426px) {
+    .services .phone{
+        display: none;
+    }
+}
